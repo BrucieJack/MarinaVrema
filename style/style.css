@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 8vh;
+}
+
+.aboutme-title {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 1.8vh;
+  font-family: Federo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+}
+
+.aboutMe-line {
+  width: 47.6vw;
+  height: 2px;
+  background-color: #000000;
+  margin-bottom: 7.5vh;
+}
+
+.aboutMe-box {
+  width: 90vw;
+  background-color: #f7e7f0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.aboutMe-img {
+  width: 29vw;
+  margin: 100px 4vw;
+}
+
+.aboutMe-textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-left: 4vw;
+  margin-bottom: 80px;
+  width: 45vw;
+}
+
+.upperLine {
+  height: 1px;
+  background-color: #62155c;
+}
+
+.aboutMe-text {
+  font-family: IM FELL Great Primer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.downline {
+  background-color: #62155c;
+  height: 1px;
+}
+
+.gallery {
+  margin-left: 5.6vw;
+  margin-right: 5.6vw;
+}
+
+.title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  font-family: "Federo", sans-serif;
+  margin-bottom: 1.8vh;
+}
+
+.under-title-bar {
+  width: 47.6vw;
+  background-color: black;
+  height: 2px;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 7.5vh;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 4vh;
+}
+
+.gallery-row-tight {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 4vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 36px;
+  margin: auto;
+}
+
+.RuEn {
+  text-decoration: none;
+  color: black;
+  font-size: 36px;
+  margin: auto;
+}
+
+.header {
+  background-color: #f7e7f0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8vh;
+}
+
+.navbar-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px 0px 20px 0px;
+}
+
+.navbar-menu {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbar-lenguage {
+  display: flex;
+  flex-direction: row;
+}
+
+.background-imgs {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.background-img {
+  width: 33%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background-color: #f7e7f0;
+  width: 100%;
+}
+
+.navbar-box-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbar-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.navbar-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-menu-bottom {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbar-logo {
+  margin-top: 5vh;
+}
+
+.contact-text {
+  font-family: Federo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+@media only screen and (max-device-width: 1568px) {
+  .right-header {
+    display: none;
+  }
+
+  .background-imgs {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-device-width: 1062px) {
+  .left-header {
+    display: none;
+  }
+  .navbar-lenguage {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 1011px) {
+  .aboutMe-text {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .navbar-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-menu {
+    width: 70vw;
+  }
+
+  .gallery {
+    margin: 0;
+  }
+
+  .aboutMe-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutMe-img {
+    width: 29vw;
+    margin: 0px 4vw;
+    margin-top: 40px;
+  }
+
+  .aboutMe-textBox {
+    width: 70vw;
+  }
+
+  .gallery-img {
+    display: none;
+  }
+
+  .navbar-logo {
+    display: none;
+  }
+
+  .navbar-menu-bottom {
+    justify-content: space-between;
+  }
+
+  .aboutMe-img {
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-device-width: 757px) {
+  .navbar-menu-bottom {
+    display: none;
+  }
+
+  .navbar-menu {
+    width: 100vw;
+  }
+
+  .mid-header {
+    width: 100vw;
+  }
+
+  a {
+    font-size: 26px;
+    margin: auto;
+  }
+
+  .navbar-logo-top {
+    margin-bottom: 10px;
+  }
+}
