@@ -3,6 +3,59 @@
   padding: 0;
 }
 
+.wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+.container {
+  width: 100%;
+}
+
+.header {
+  background-color: #f7e7f0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8vh;
+}
+
+.navbar-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px 0px 20px 0px;
+}
+
+.navbar-menu {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: 'Federo', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.navbar-language {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Federo', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.background-imgs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.background-img {
+  width: 33%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .aboutMe {
   display: flex;
   flex-direction: column;
@@ -18,16 +71,17 @@
   align-content: center;
   justify-content: center;
   margin-bottom: 1.8vh;
-  font-family: Federo;
+  font-family: 'Federo', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 64px;
+  font-size: calc(24px + 30 * (100vw / 1600));
   line-height: 75px;
 }
 
 .aboutMe-line {
   width: 47.6vw;
   height: 2px;
+  border: none;
   background-color: #000000;
   margin-bottom: 7.5vh;
 }
@@ -61,10 +115,10 @@
 }
 
 .aboutMe-text {
-  font-family: IM FELL Great Primer;
+  font-family: 'Kufam', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: calc(14px + 16 * (100vw / 1600));
   line-height: 37px;
   display: flex;
   align-items: center;
@@ -77,94 +131,64 @@
 }
 
 .gallery {
-  margin-left: 5.6vw;
-  margin-right: 5.6vw;
+  margin: 0 3vw 0 3vw;
+}
+
+.gallery-img {
+  height: auto;
+  margin: 1vw 0 1vw 0;
+  max-width: 60%;
 }
 
 .title {
   font-style: normal;
   font-weight: normal;
-  font-size: 64px;
+  font-size: calc(24px + 30 * (100vw / 1600));
   line-height: 75px;
   text-align: center;
-  font-family: "Federo", sans-serif;
+  font-family: 'Federo', sans-serif;
   margin-bottom: 1.8vh;
-}
-
-.under-title-bar {
-  width: 47.6vw;
-  background-color: black;
-  height: 2px;
-  border: none;
-  margin: 0 auto;
-  margin-bottom: 7.5vh;
 }
 
 .gallery-row {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 4vh;
 }
 
 .gallery-row-tight {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 4vh;
+}
+
+.under-title-bar {
+  width: 47.6vw;
+  background-color: black;
+  height: 1px;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 7.5vh;
+}
+
+.gallery-row-tight {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 a {
   text-decoration: none;
   color: black;
-  font-size: 36px;
+  font-size: calc(16px + 12 * (100vw / 1600));
   margin: auto;
 }
 
 .RuEn {
   text-decoration: none;
   color: black;
-  font-size: 36px;
+  font-size: calc(20px + 16 * (100vw / 1600));
   margin: auto;
-}
-
-.header {
-  background-color: #f7e7f0;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8vh;
-}
-
-.navbar-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 10px 0px 20px 0px;
-}
-
-.navbar-menu {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.navbar-lenguage {
-  display: flex;
-  flex-direction: row;
-}
-
-.background-imgs {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  justify-content: space-between;
-}
-
-.background-img {
-  width: 33%;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .footer {
@@ -172,6 +196,16 @@ a {
   width: 100%;
 }
 
+.navbar-contact > a > img {
+  width: 40px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.navbar-contact > a {
+  display: flex;
+  margin: 0;
+}
 .navbar-box-bottom {
   display: flex;
   flex-direction: row;
@@ -180,7 +214,7 @@ a {
 
 .navbar-contacts {
   display: flex;
-  flex-direction: column;
+  width: 10%;
   justify-content: space-around;
 }
 
@@ -196,6 +230,9 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-family: 'Federo', sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .navbar-logo {
@@ -203,10 +240,10 @@ a {
 }
 
 .contact-text {
-  font-family: Federo;
+  font-family: 'Federo', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: calc(14px + 10 * (100vw / 1600));
   line-height: 42px;
 }
 
@@ -220,21 +257,22 @@ a {
   }
 }
 
+@media only screen and (max-device-width: 1400px) {
+  .unic-img {
+    display: none;
+  }
+}
+
 @media only screen and (max-device-width: 1062px) {
   .left-header {
     display: none;
   }
-  .navbar-lenguage {
+  .navbar-language {
     display: none;
   }
 }
 
 @media only screen and (max-device-width: 1011px) {
-  .aboutMe-text {
-    font-size: 26px;
-    line-height: 36px;
-  }
-
   .navbar-box {
     flex-direction: column;
     justify-content: center;
@@ -260,12 +298,12 @@ a {
     margin-top: 40px;
   }
 
-  .aboutMe-textBox {
-    width: 70vw;
+  .gallery-row {
+    margin-bottom: 0;
   }
 
-  .gallery-img {
-    display: none;
+  .aboutMe-textBox {
+    width: 70vw;
   }
 
   .navbar-logo {
@@ -286,6 +324,25 @@ a {
     display: none;
   }
 
+  .aboutMe-text {
+    font-size: calc(14px + (16 + 0, 7 * 16) * ((100vw - 320px) / 1600));
+  }
+
+  .aboutme-title {
+    font-size: calc(24px + (30 + 0, 7 * 30) * ((100vw - 320px) / 1600));
+  }
+
+  .title {
+    font-size: calc(24px + (30 + 0, 7 * 30) * ((100vw - 320px) / 1600));
+  }
+
+  .gallery-img {
+    height: auto;
+    width: 100%;
+    max-width: 90%;
+    margin: 2vw 10vw 2vw 10vw;
+  }
+
   .navbar-menu {
     width: 100vw;
   }
@@ -295,10 +352,17 @@ a {
   }
 
   a {
-    font-size: 26px;
+    font-size: calc(16px + (12 + 12 * 0.7) * ((100vw - 320px) / 1600));
     margin: auto;
   }
 
+  .RuEn {
+    font-size: calc(20px + (16 + 16 * 0.7) * ((100vw - 320px) / 1600));
+  }
+
+  .contact-text {
+    font-size: calc(14px + (10 + 10 * 0.7) * ((100vw - 320px) / 1600));
+  }
   .navbar-logo-top {
     margin-bottom: 10px;
   }
